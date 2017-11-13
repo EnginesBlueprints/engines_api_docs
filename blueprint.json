@@ -16,12 +16,12 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T17:55:12+11:00"
+    "timestamp": "2017-11-13T17:56:57+11:00"
   },
   "software": {
     "base": {
       "name": "docs",
-      "framework": "sinatra",
+      "framework": "apache_php",
       "deployment_type": "web",
       "http_protocol": "http_only",
       "continuous_deployment": true,
@@ -39,7 +39,7 @@
     },
     "system_packages": [
       {
-        "package": "apache2"
+        "package": "yard"
       }
     ],
     "installed_packages": [
