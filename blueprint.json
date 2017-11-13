@@ -16,14 +16,14 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T17:32:49+11:00"
+    "timestamp": "2017-11-13T17:39:15+11:00"
   },
   "software": {
     "base": {
-      "name": "engines_api_docs",
+      "name": "docs",
       "framework": "apache_php",
       "deployment_type": "web",
-      "http_protocol": "https_and_http",
+      "http_protocol": "http_only",
       "continuous_deployment": true,
       "memory": {
         "required": 64,
