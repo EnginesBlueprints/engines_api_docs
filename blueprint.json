@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T17:39:15+11:00"
+    "timestamp": "2017-11-13T17:51:27+11:00"
   },
   "software": {
     "base": {
@@ -30,6 +30,12 @@
         "recommended": 64
       },
       "installation_report": "goto [http://_Engines_Builder(fqdn)](http://_Engines_Builder(fqdn))"
+    },
+    "scripts": {
+      "start": {
+        "language": "sh",
+        "content": "#!/bin/bash\r\n\r\ncd engines_src\r\ngit pull "
+      }
     },
     "installed_packages": [
       {
@@ -50,7 +56,7 @@
       "apache_htaccess_files": [
         {
           "directory": "./",
-          "content": "#Redirect / to top level\r\nRewriteEngine On\r\nRewriteRule ^$ /src/server/top-level-namespace.html [L]"
+          "content": "#Redirect / to top level\r\nRewriteEngine On\r\nRewriteRule ^$ /engines_src/src/server/doc/top-level-namespace.html [L]"
         }
       ]
     }
