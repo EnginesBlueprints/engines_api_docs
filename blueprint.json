@@ -1,6 +1,6 @@
 {
   "schema": {
-    "type": "service_blueprint",
+    "type": "app_blueprint",
     "version": {
       "major": 1,
       "minor": 0
@@ -15,8 +15,44 @@
         "level": "alpha",
         "patch": 0
       }
-    }
+    },
+    "timestamp": "2017-11-13T17:31:02+11:00"
   },
   "software": {
+    "base": {
+      "name": "engines_api_docs",
+      "framework": "apache_php",
+      "deployment_type": "web",
+      "http_protocol": "https_and_http",
+      "continuous_deployment": true,
+      "memory": {
+        "required": 64,
+        "recommended": 63
+      },
+      "installation_report": "goto [http://_Engines_Builder(fqdn)](http://_Engines_Builder(fqdn))"
+    },
+    "installed_packages": [
+      {
+        "name": "engines",
+        "source_url": "https://github.com/EnginesOS/System",
+        "destination": "engines_src",
+        "extraction_command": "git",
+        "path_to_extracted": "System"
+      }
+    ],
+    "required_modules": [
+      {
+        "name": "rewrite",
+        "type": "apache"
+      }
+    ],
+    "framework_specific": {
+      "apache_htaccess_files": [
+        {
+          "directory": "./",
+          "content": "#Redirect / to top level\r\nRewriteEngine On\r\nRewriteRule ^$ /src/server/top-level-namespace.html [L]"
+        }
+      ]
+    }
   }
 }
