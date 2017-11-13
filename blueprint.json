@@ -16,27 +16,32 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T17:51:27+11:00"
+    "timestamp": "2017-11-13T17:55:12+11:00"
   },
   "software": {
     "base": {
       "name": "docs",
-      "framework": "apache_php",
+      "framework": "sinatra",
       "deployment_type": "web",
       "http_protocol": "http_only",
       "continuous_deployment": true,
       "memory": {
-        "required": 64,
-        "recommended": 64
+        "required": 96,
+        "recommended": 128
       },
       "installation_report": "goto [http://_Engines_Builder(fqdn)](http://_Engines_Builder(fqdn))"
     },
     "scripts": {
       "start": {
         "language": "sh",
-        "content": "#!/bin/bash\r\n\r\ncd engines_src\r\ngit pull "
+        "content": "#!/bin/bash\r\n\r\ncd engines_src\r\ngit pull \r\ncd /engines_src/src/server/\r\nyardoc"
       }
     },
+    "system_packages": [
+      {
+        "package": "apache2"
+      }
+    ],
     "installed_packages": [
       {
         "name": "engines",
