@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T17:56:57+11:00"
+    "timestamp": "2017-11-13T18:14:37+11:00"
   },
   "software": {
     "base": {
@@ -24,6 +24,7 @@
       "framework": "apache_php",
       "deployment_type": "web",
       "http_protocol": "http_only",
+      "web_root_directory": "/engines_src/src/server/doc/",
       "continuous_deployment": true,
       "memory": {
         "required": 96,
@@ -61,7 +62,7 @@
       "apache_htaccess_files": [
         {
           "directory": "./",
-          "content": "#Redirect / to top level\r\nRewriteEngine On\r\nRewriteRule ^$ /engines_src/src/server/doc/top-level-namespace.html [L]"
+          "content": "#Redirect / to top level\r\nRewriteEngine On\r\nRewriteRule /index.html /top-level-namespace.html [L]"
         }
       ]
     }
