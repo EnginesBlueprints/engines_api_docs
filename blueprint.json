@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T17:31:02+11:00"
+    "timestamp": "2017-11-13T17:32:49+11:00"
   },
   "software": {
     "base": {
@@ -27,7 +27,7 @@
       "continuous_deployment": true,
       "memory": {
         "required": 64,
-        "recommended": 63
+        "recommended": 64
       },
       "installation_report": "goto [http://_Engines_Builder(fqdn)](http://_Engines_Builder(fqdn))"
     },
