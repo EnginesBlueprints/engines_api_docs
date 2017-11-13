@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T18:23:33+11:00"
+    "timestamp": "2017-11-13T19:41:34+11:00"
   },
   "software": {
     "base": {
@@ -24,7 +24,7 @@
       "framework": "apache_php",
       "deployment_type": "web",
       "http_protocol": "http_only",
-      "web_root_directory": "/home/app/engines_src/src/server/doc/",
+      "web_root_directory": "/engines_src/src/server/doc/",
       "continuous_deployment": true,
       "memory": {
         "required": 96,
