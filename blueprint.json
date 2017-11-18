@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-19T10:06:46+11:00"
+    "timestamp": "2017-11-19T10:14:44+11:00"
   },
   "software": {
     "base": {
@@ -56,6 +56,17 @@
       {
         "name": "rewrite",
         "type": "apache"
+      }
+    ],
+    "actionators": [
+      {
+        "name": "refresh_docs",
+        "label": "Refresh Docs",
+        "return_type": "plain_text",
+        "script": {
+          "language": "sh",
+          "content": "#!/bin/bash\r\ncd /home/app/engines_src\r\ngit pull \r\ncd /home/app/engines_src/src/server/\r\nyardoc ."
+        }
       }
     ],
     "framework_specific": {
