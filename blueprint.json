@@ -16,7 +16,13 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-19T10:14:44+11:00"
+    "software": {
+      "display": {
+        "title": "rdocs",
+        "label": "rdocs"
+      }
+    },
+    "timestamp": "2017-11-19T10:26:47+11:00"
   },
   "software": {
     "base": {
