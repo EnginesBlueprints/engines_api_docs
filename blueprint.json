@@ -16,7 +16,7 @@
         "patch": 0
       }
     },
-    "timestamp": "2017-11-13T19:41:34+11:00"
+    "timestamp": "2017-11-19T10:06:46+11:00"
   },
   "software": {
     "base": {
@@ -35,7 +35,7 @@
     "scripts": {
       "start": {
         "language": "sh",
-        "content": "#!/bin/bash\r\n\r\ncd engines_src\r\ngit pull \r\ncd /engines_src/src/server/\r\nyardoc"
+        "content": "#!/bin/bash\r\n\r\ncd /home/app/engines_src\r\ngit pull \r\ncd /home/app/engines_src/src/server/\r\nyardoc ."
       }
     },
     "system_packages": [
