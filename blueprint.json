@@ -2,8 +2,8 @@
   "schema": {
     "type": "app_blueprint",
     "version": {
-      "major": 1,
-      "minor": 0
+      "major": 0,
+      "minor": 1
     },
     "origin": "Engines Developer Studio 0.2"
   },
@@ -22,7 +22,7 @@
         "label": "rdocs"
       }
     },
-    "timestamp": "2017-11-19T10:26:47+11:00"
+    "timestamp": "2019-02-12T09:03:58+11:00"
   },
   "software": {
     "base": {
@@ -33,7 +33,7 @@
       "web_root_directory": "/engines_src/src/server/doc/",
       "continuous_deployment": true,
       "memory": {
-        "required": 96,
+        "required": 97,
         "recommended": 128
       },
       "installation_report": "goto [http://_Engines_Builder(fqdn)](http://_Engines_Builder(fqdn))"
